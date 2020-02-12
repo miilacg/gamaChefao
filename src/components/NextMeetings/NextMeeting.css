@@ -1,0 +1,13 @@
+.App-next-meeting{
+    background: #FAFAFA;
+    box-shadow:rgba(0, 0, 0, .3), 0, 3px, 6px;
+}
+
+.arrow-down{
+    border: solid #5810C4;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    transform: rotate(45deg);
+}

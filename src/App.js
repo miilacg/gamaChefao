@@ -29,8 +29,12 @@ export default class HomePage extends Component {
                 <div className="App-body row">
                     <div className="App-body__next-meetings">
                         <div className="App-next-meetings__title">
-                            <h2>Próximas reuniões</h2>
-                            <span className="ball"></span>
+                            <h2 className="row">
+                                Próximas reuniões
+                                <div className="blue-ball">
+                                    <span>2</span>
+                                </div>
+                            </h2>
                         </div>
                         <NextMeeting></NextMeeting>
                     </div>
