@@ -1,0 +1,25 @@
+.App-next-meetings__container .container__header{
+    align-items: center;
+    color: #0FC976;
+    display: flex;
+}
+
+.App-next-meetings__container .container__header span{
+    font-size: 0.83vw;
+    font-weight: bold;
+    margin-left: 0.2vw;
+}
+
+.App-next-meetings__container .container__header img{
+    width: 1vw;
+}
+
+.App-next-meetings__container h3{
+    font-size: 1.6vw;
+}
+.App-next-meetings__container p{
+    font-size: 1vw;
+}
+.App-next-meetings__container{
+    padding: 1.25vw;
+}

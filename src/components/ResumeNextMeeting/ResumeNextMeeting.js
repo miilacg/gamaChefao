@@ -11,7 +11,7 @@ export default class ResumeNextMeeting extends Component {
     }
     render() {
         return (
-            <div className="row">
+            <div className="NextMeeting-resume row">
                 <p>Duração: {this.minutes}</p>
                 <p>{this.date}</p>
                 <p>

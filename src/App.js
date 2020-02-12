@@ -17,20 +17,33 @@ export default class HomePage extends Component {
                     </div>
                     <nav className="App-nav">
                         <ul className="App-nav__list row">
-                            <li>Reuniões</li>
-                            <li>Contatos</li>
-                            <li>Premium</li>
+                            <a href="http://localhost:3000/">
+                                <li className="active">Reuniões</li>
+                            </a>
+                            <a href="http://localhost:3000/">
+                                <li>Contatos</li>
+                            </a>
+                            <a href="http://localhost:3000/">
+                                <li>Premium</li>
+                            </a>
                         </ul>
                     </nav>
-                    <Button variant="contained" color="primary">
+                    <Button
+                        variant="contained"
+                        style={{ background: "#0FC976", color: "#FFFFFF" }}
+                    >
                         CRIAR REUNIÃO
                     </Button>
                 </div>
                 <div className="App-body row">
                     <div className="App-body__next-meetings">
                         <div className="App-next-meetings__title">
-                            <h2>Próximas reuniões</h2>
-                            <span className="ball"></span>
+                            <h2 className="row">
+                                Próximas reuniões
+                                <div className="blue-ball">
+                                    <span>2</span>
+                                </div>
+                            </h2>
                         </div>
                         <NextMeeting></NextMeeting>
                     </div>
