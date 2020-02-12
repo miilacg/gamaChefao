@@ -7,8 +7,9 @@
 
 .App-header{
 	align-items: center;
-	background: #5818C4;
+	background:#5818C4 0% 0% no-repeat padding-box;
 	box-shadow: 8px 2px 16px #00000029;
+	opacity: 1;
 	justify-content: space-between;
 	height: 6vw;
 	padding: 0 4vw;
@@ -19,6 +20,7 @@
 	display: flex;
 	flex-direction: row;
 }
+
 .App-body{
 	padding: 4vw;
 	padding-top: 0;
@@ -31,8 +33,12 @@
 
 .App .App-header .App-nav .App-nav__list a{
 	color: #FFFFFF;
+	opacity: 1;
 	margin-left: 3.3vw;
+	margin-top: 1.2vw;
 	text-decoration: none;
+	letter-spacing: 0;
+	font-size: 1.2vw;
 }
 
 .App .App-header .App-nav .App-nav__list a li.active{
@@ -66,4 +72,11 @@
 	justify-content: center;
 	height: 2.1vw;
 	width: 2.1vw;
+}
+
+button{
+	background: #0FC976 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #0000003C;
+	border: 1px solid #FAFAFA;
+	opacity: 1;
 }
