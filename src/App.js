@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Button from "@material-ui/core/Button";
+import NextMeeting from "./components/NextMeetings/NextMeeting";
+import logoMeetAndPlan from "./assets/logo-meet-and-plan.png";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class HomePage extends Component {
+    render() {
+        return (
+            <div className="App">
+                <div className="App-header row">
+                    <div className="App-image">
+                        <img
+                            src={logoMeetAndPlan}
+                            alt="Logo da Meet and Plan"
+                        ></img>
+                    </div>
+                    <nav className="App-nav">
+                        <ul className="App-nav__list row">
+                            <li>Reuniões</li>
+                            <li>Contatos</li>
+                            <li>Premium</li>
+                        </ul>
+                    </nav>
+                    <Button variant="contained" color="primary">
+                        CRIAR REUNIÃO
+                    </Button>
+                </div>
+                <div className="App-body row">
+                    <div className="App-body__next-meetings">
+                        <div className="App-next-meetings__title">
+                            <h2>Próximas reuniões</h2>
+                            <span className="ball"></span>
+                        </div>
+                        <NextMeeting></NextMeeting>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
-
-export default App;
