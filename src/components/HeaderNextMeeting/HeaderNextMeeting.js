@@ -10,7 +10,7 @@ export default class HeaderNextMeeting extends Component {
     }
     render() {
         return (
-            <div className="App-next-meetings__container">
+            <div className="App-next-meetings__container HeaderNextMeeting">
                 <div className="container__header row">
                     <img src={smallCalendar} alt="small calendar"></img>
                     <span>{this.content.date}</span>

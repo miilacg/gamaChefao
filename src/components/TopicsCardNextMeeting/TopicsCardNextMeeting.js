@@ -15,7 +15,7 @@ export default class TopicsCardNextMeeting extends Component {
     }
     render() {
         return (
-            <div className="row">
+            <div className="NextMeeting-TopicsCard row">
                 <span className="green-ball">{this.number}</span>
                 <h3>{this.title}</h3>
                 <p>{this.description}</p>

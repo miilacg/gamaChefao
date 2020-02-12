@@ -1,0 +1,45 @@
+.NextMeeting-TopicsCard{
+    align-items: center;
+    border: 1px solid #E0E0E0;
+    display: flex;
+    margin: 0;
+    margin-bottom: 0.8vw;
+    padding: 0;
+    padding-left: 1vw;
+}
+.NextMeeting-TopicsCard h3{
+    color: #707070;
+    font-size: 1vw;
+    font-weight: bold;
+    margin: 0 1vw;
+}
+.NextMeeting-TopicsCard p{
+    color: #707070;
+    font-size: 0.8vw;
+    letter-spacing: 0;
+    margin: 0;
+    margin-left: 5.2vw;
+    margin-right: 1.6vw;
+    width: 55%;
+}
+.NextMeeting-TopicsCard .background-time{
+    align-items: center;
+    background: #E6E6F8;
+    border: 1px#E0E0E0 solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 6.25vw;
+    width: 4.75vw;
+}
+
+.NextMeeting-TopicsCard .background-time p{
+    margin: 0;
+    text-align: center;
+    font-size: 1.25vw;
+    font-weight: bold;
+}
+.NextMeeting-TopicsCard .background-time p.time__min{
+    font-size: 0.8vw;
+    font-weight: normal;
+}

@@ -50,13 +50,15 @@ export default class NextMeeting extends Component {
             <div className="App-next-meeting">
                 <Header content={this.header}></Header>
                 <Resume></Resume>
-                <h2>
+                <h2 className="TopicsCard__title">
                     Tópicos da Reunião
                     <span className="arrow-down"></span>
                 </h2>
-                {this.topicsCard.map((e, i) => (
-                    <TopicsCard content={e} key={i} number={i + 1} />
-                ))}
+                <div className="TopicsCards">
+                    {this.topicsCard.map((e, i) => (
+                        <TopicsCard content={e} key={i} number={i + 1} />
+                    ))}
+                </div>
             </div>
         );
     }

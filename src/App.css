@@ -3,17 +3,25 @@
 .App{
 	background: #FAFAFA;
 	font-family: 'Roboto', sans-serif;
-	padding: 80px;
 }
 
 .App-header{
-	justify-content: space-around;
-	width: 100%;
+	align-items: center;
+	background: #5818C4;
+	box-shadow: 8px 2px 16px #00000029;
+	justify-content: space-between;
+	height: 6vw;
+	padding: 0 4vw;
+	width: calc(100% - 8vw);
 }
 
 .row{
 	display: flex;
 	flex-direction: row;
+}
+.App-body{
+	padding: 4vw;
+	padding-top: 0;
 }
 
 .App .App-header .App-nav .App-nav__list{
@@ -21,10 +29,15 @@
 	padding: 0;
 }
 
-.App-body .App-body__next-meetings .App-next-meetings__title h2{
-	color: #1C1C1C;
-	font-size: 24px;
-	font-weight: bold;
+.App .App-header .App-nav .App-nav__list a{
+	color: #FFFFFF;
+	margin-left: 3.3vw;
+	text-decoration: none;
+}
+
+.App .App-header .App-nav .App-nav__list a li.active{
+	border-bottom: 0.2vw solid #0FC976;
+	padding-bottom: 0.2vw;
 }
 
 .blue-ball{
@@ -32,9 +45,25 @@
 	color: #FFFFFF;
 	display: flex;
 	justify-content: center;
-	font-size: 24px;
-	height: 30px;
-	margin-left: 8px;
-    width: 30px;
+	height: 1.5vw;
+	margin-left: 0.4vw;
+    width: 1.5vw;
     border-radius: 100%;
+}
+.blue-ball span{
+	font-size: 1.25vw;
+	line-height: 1.5vw;
+}
+
+.green-ball{
+	align-items: center;
+	background: #0FC976;
+	border-radius: 100%;
+	color: #FAFAFA;
+	display: flex;
+	font-size: 1.25vw;
+	font-weight: bold;
+	justify-content: center;
+	height: 2.1vw;
+	width: 2.1vw;
 }

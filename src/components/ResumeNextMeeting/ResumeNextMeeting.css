@@ -1,0 +1,10 @@
+.NextMeeting-resume{
+    background: #FFF;
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25vw;
+}
+.NextMeeting-resume p{
+    font-size: 0.8vw;
+}
