@@ -19,13 +19,15 @@ export default class BodyNovaReuniaoConfirmar extends Component {
     render() {
         return (
             <div>
-                <Header content = {this.assunto}></Header>
-                <Resume 
-                    minutes = "42 min"
-                    date = "segunda-feira, 10/fev 14:00-15:00"
-                    priority = "Muito Alta"
-                />
-                <Body></Body>
+                <div className = "card-body">
+                    <Header content = {this.assunto}></Header>
+                    <Resume 
+                        minutes = "42 min"
+                        date = "segunda-feira, 10/fev 14:00-15:00"
+                        priority = "Muito Alta"
+                    />
+                    <Body></Body>
+                </div>
             </div>  
         );
     }

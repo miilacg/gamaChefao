@@ -6,7 +6,8 @@
     border: 1px solid #DED9D9;
     opacity: 1;
     justify-content: space-between;
-    padding-top: 1.5vw;
+    padding-top: 1.3vw;
+    margin-top: -1vw;
 }
 
 .btn.botao{
