@@ -15,14 +15,28 @@ export default class TopicsCardNextMeeting extends Component {
     }
     render() {
         return (
-            <div className="NextMeeting-TopicsCard row">
-                <span className="green-ball">{this.number}</span>
-                <h3>{this.title}</h3>
-                <p>{this.description}</p>
-                <div className="background-time column">
-                    <p className="time__number">{this.time}</p>
-                    <p className="time__min">min</p>
-                </div>
+            <div className = "NextMeeting-TopicsCard row">
+                <table class = "table table-borderless">
+                    <thead>
+                        <tr>
+                            <th class = "numero" scope = "col">
+                                <div className = "circuloTopico">
+                                    {this.number}
+                                </div>
+                            </th>
+                            <th class = "legenda" scope = "col">
+                                <h4>{this.title}</h4>
+                            </th>
+                            <th class = "resumo" scope = "col">
+                                <p>{this.description}</p>
+                            </th>
+                            <th class = "duracao" scope = "col">
+                                <p class = "tempoNumero">{this.time}</p>
+                                <p class = "tempo">min</p>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
             </div>
         );
     }

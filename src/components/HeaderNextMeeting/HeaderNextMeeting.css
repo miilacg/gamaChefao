@@ -5,9 +5,15 @@
 }
 
 .App-next-meetings__container .container__header span{
-    font-size: 0.83vw;
-    font-weight: bold;
-    margin-left: 0.2vw;
+    top: 266px;
+    left: 188px;
+    width: 113px;
+    height: 1.1vw;
+    text-align: left;
+    font: Bold 0.9vw/1.1vw Roboto;
+    letter-spacing: 0;
+    color: #0FC976;
+    opacity: 1;
 }
 
 .App-next-meetings__container .container__header img{
@@ -23,3 +29,13 @@
 .App-next-meetings__container{
     padding: 1.25vw;
 }
+
+/*
+    32px = 1.6vw
+    30px = 1.5vw
+    24px = 1.25vw
+    19px = 1.1vw
+    18px = 1vw
+    16px = 0.8vw
+    8px = 0.4vw
+*/

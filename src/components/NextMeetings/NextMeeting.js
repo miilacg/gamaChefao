@@ -2,12 +2,14 @@ import React, { Component } from "react";
 import Header from "../HeaderNextMeeting/HeaderNextMeeting";
 import Resume from "../ResumeNextMeeting/ResumeNextMeeting";
 import TopicsCard from "../TopicsCardNextMeeting/TopicsCardNextMeeting";
+import smallCalendar from "../../assets/calendar.svg";
 import "./NextMeeting.css";
 
 export default class NextMeeting extends Component {
     constructor() {
         super();
         this.header = {
+            image: smallCalendar,
             date: "Amanhã",
             title: "Reunião de Alinhamento com a equipe.",
             description:
@@ -18,29 +20,29 @@ export default class NextMeeting extends Component {
                 number: 1,
                 title: "Introdução",
                 description:
-                    "Todos falam um pouco sobre o que os trouxe ao projeto e os levantamentos feitos durante a última semana. Lorem ipsum dolor sit amet consecutor lorem ipsum dolor sit amet consecutor.",
+                    "Todos falam um pouco sobre o que os trouxe ao projeto e os levantamentos feitos durante a última semana.",
                 time: 6
             },
             {
-                number: 1,
-                title: "Introdução",
+                number: 2,
+                title: "O que eu já fiz?",
                 description:
-                    "Todos falam um pouco sobre o que os trouxe ao projeto e os levantamentos feitos durante a última semana. Lorem ipsum dolor sit amet consecutor lorem ipsum dolor sit amet consecutor.",
-                time: 6
+                    "Todos falam um pouco sobre o que os trouxe ao projeto e os levantamentos feitos durante a última semana.",
+                time: 12
             },
             {
-                number: 1,
-                title: "Introdução",
+                number: 3,
+                title: "O que farei",
                 description:
-                    "Todos falam um pouco sobre o que os trouxe ao projeto e os levantamentos feitos durante a última semana. Lorem ipsum dolor sit amet consecutor lorem ipsum dolor sit amet consecutor.",
-                time: 6
+                    "Todos falam um pouco sobre o que os trouxe ao projeto e os levantamentos feitos durante a última semana.",
+                time: 12
             },
             {
-                number: 1,
-                title: "Introdução",
+                number: 4,
+                title: "Dúvidas finais",
                 description:
-                    "Todos falam um pouco sobre o que os trouxe ao projeto e os levantamentos feitos durante a última semana. Lorem ipsum dolor sit amet consecutor lorem ipsum dolor sit amet consecutor.",
-                time: 6
+                    "Todos falam um pouco sobre o que os trouxe ao projeto e os levantamentos feitos durante a última semana.",
+                time: 12
             }
         ];
     }
@@ -49,7 +51,11 @@ export default class NextMeeting extends Component {
         return (
             <div className="App-next-meeting">
                 <Header content={this.header}></Header>
-                <Resume></Resume>
+                <Resume 
+                    minutes = "42 min"
+                    date = "segunda-feira, 10/fev 14:00-15:00"
+                    priority = "Muito Alta"
+                />
                 <h2 className="TopicsCard__title">
                     Tópicos da Reunião
                     <span className="arrow-down"></span>

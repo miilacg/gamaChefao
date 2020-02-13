@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+
 import "./HeaderNextMeeting.css";
-import smallCalendar from "../../assets/calendar.svg";
 
 export default class HeaderNextMeeting extends Component {
     constructor(props) {
@@ -12,7 +12,7 @@ export default class HeaderNextMeeting extends Component {
         return (
             <div className="App-next-meetings__container HeaderNextMeeting">
                 <div className="container__header row">
-                    <img src={smallCalendar} alt="small calendar"></img>
+                    <img src={this.content.image} alt={this.content.image}></img>
                     <span>{this.content.date}</span>
                 </div>
                 <h3>{this.content.title}</h3>
