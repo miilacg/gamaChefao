@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap');
+
+h1{
+    top: 9vw;
+    left: 24.05vw;
+    width: 13vw;
+    height: 2vw;
+    text-align: left;
+    font-weight: Bold;
+    font-size: 1.8vw;
+    line-height: 2vw;
+    font-family: Roboto;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    margin-top: 0.8vw;
+}
+
+.row{
+    justify-content: space-around;
+}

@@ -5,6 +5,11 @@
     justify-content: space-between;
     padding: 1.25vw;
 }
+
 .NextMeeting-resume p{
+    text-align: left;
+    letter-spacing: 0;
+    color: #707070;
+    opacity: 1;
     font-size: 0.8vw;
 }

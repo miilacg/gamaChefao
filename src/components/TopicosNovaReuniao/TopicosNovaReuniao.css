@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap');
+
+.col .titultoTopicos{
+    text-align: left;
+    font-weight: Bold;
+    font-size: 1.3vw;
+    line-height: 1.6vw;
+    font-style: Roboto;
+    letter-spacing: 0;
+    color: #1C1C1C;
+    opacity: 1;
+}
