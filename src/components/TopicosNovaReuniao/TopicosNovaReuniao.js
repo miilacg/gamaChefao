@@ -26,7 +26,7 @@ export default class bodyNovaTopico extends Component {
     render() {
         return (
             <div className = "col">
-                <p class = "titultoTopicos">Tópicos da Reunião</p>
+                <p class = "tituloTopicos">Tópicos da Reunião</p>
                 {this.topicos.map((e, i) => (
                     <Topicos content={e} key={i} number={i + 1} />
                 ))}

@@ -26,12 +26,14 @@ export default class HeaderNovaReuniao extends Component {
 
     render() {
         return (
-            <div className = "row">
-                <h1>Criar reunião</h1>
-                {this.passos.map((e, i) => (
-                    <Passos content={e} key={i} number={i + 1} />
-                ))}
-                <img src = {fechar} alt = "botao de fechar"></img>
+            <div class = "card-header"> 
+                <div className = "row">                
+                    <h1>Criar reunião</h1>
+                    {this.passos.map((e, i) => (
+                        <Passos content={e} key={i} number={i + 1} />
+                    ))}
+                    <img src = {fechar} alt = "botao de fechar"></img>
+                </div>
             </div>
         );
     }
